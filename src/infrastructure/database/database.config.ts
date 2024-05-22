@@ -1,9 +1,9 @@
 import { DataSource } from 'typeorm';
 import { Cliente } from '../../domain/entities/cliente.entity';
 import { Habitacion } from '../../domain/entities/habitacion.entity';
-import { Reserva } from '../../domain/entities/reserva.entity';
+import { Reserva } from '../models/reserva.models';
 import { Pago } from '../../domain/entities/pago.entity';
-import { Servicio } from '../../domain/entities/servicio.entity';
+import { Servicio } from '../models/servicio.models';
 
 export const AppDataSource = new DataSource({
   type: 'mysql',

@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
-import { Cliente } from './cliente.entity';
-import { Habitacion } from './habitacion.entity';
+import { Cliente } from './cliente.models';
+import { Habitacion } from './habitacion.models';
 
 @Entity('Reserva')
 export class Reserva {

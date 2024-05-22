@@ -1,5 +1,5 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
-import { Reserva } from './reserva.entity';
+import { Reserva } from './reserva.models';
 
 @Entity('Pago')
 export class Pago {
