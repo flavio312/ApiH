@@ -1,7 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 'typeorm';
 import { Reserva } from './reserva.entity';
 
-@Entity('Pagos')
+@Entity('Pago')
 export class Pago {
   @PrimaryGeneratedColumn()
   id_pago!: number;

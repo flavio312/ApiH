@@ -2,7 +2,7 @@ import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from 't
 import { Cliente } from './cliente.entity';
 import { Habitacion } from './habitacion.entity';
 
-@Entity('Reservas')
+@Entity('Reserva')
 export class Reserva {
   @PrimaryGeneratedColumn()
   id_reserva!: number;
@@ -15,10 +15,10 @@ export class Reserva {
   cliente!: Cliente;
 
   @Column()
-  id_habitación!: number;
+  id_habitacion!: number;
 
   @ManyToOne(() => Habitacion)
-  @JoinColumn({ name: 'id_habitación' })
+  @JoinColumn({ name: 'id_habitacion' })
   habitacion!: Habitacion;
 
   @Column('date')
